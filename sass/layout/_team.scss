@@ -1,0 +1,123 @@
+img {
+   width: 100%;
+}
+
+.team {
+   background-color: var(--grey-color);
+
+   padding: 60px 0;
+   text-align: center;
+}
+
+.team__title {
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 1.17;
+
+   @include desktop {
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+   }
+
+   color: var(--title-text-color);
+
+   margin-bottom: 30px;
+}
+
+.team-card {
+
+   @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+   }
+
+   @include desktop {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: -15px;
+   }   
+}
+
+.team-card__info {
+   padding: 30px 0;
+   background-color: var(--primary-white-color);
+   border-radius: 0px 0px 4px 4px;
+}
+
+
+
+.team-card__item {
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+
+      &:not(:last-child) {
+      margin-bottom: 30px;
+   }
+
+   
+
+   @include tablet {
+      width: calc(100% / 2 - 30px);
+      margin: 15px;
+      &:last-child {
+         margin-bottom: 30px;
+      }
+   }
+}
+
+.team-card__member {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+
+   color: var(--title-text-color);
+
+   margin-bottom: 10px;
+}
+
+.team-card__pos {
+   font-size: 16px;
+   line-height: 1.18;
+   margin-bottom: 16px;
+}
+
+.team-soc {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.team-soc__item:not(:last-child) {
+   margin-right: 10px;
+}
+
+.team-soc__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: var(--primary-white-color);
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
+}
+
+.team-soc__icon {
+   fill: #AFB1B8;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   
+
+   .team-soc__link:hover &,
+   .team-soc__link:focus & {
+      fill: var(--primary-white-color);
+   }
+}

@@ -1,0 +1,33 @@
+.hero {
+   background-color: #2F303A;
+   background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   max-width: 1600px;
+   margin: 0 auto;
+   padding: 118px 0;
+   text-align: center;
+
+
+}
+
+.hero__title {
+   font-weight: 900;
+   font-size: 26px;
+   line-height: 1.62;
+   
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   display: block;
+
+   color: var(--primary-white-color);
+
+   max-width: 360px;   
+   margin: 0 auto 30px auto;
+
+   @include desktop {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+   }
+}

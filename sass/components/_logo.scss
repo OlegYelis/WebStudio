@@ -1,0 +1,19 @@
+.logo {
+   font-family: Raleway, sans-serif; 
+   font-size: 24px;
+   line-height: 1.19;
+   
+   @include desktop {
+      font-size: 26px;      
+   }
+
+   color: var(--accent-color);
+}
+
+.logo__text--white {
+   color: var(--primary-white-color);
+}
+
+.logo__text--black {
+   color: var(--title-text-color);
+}
