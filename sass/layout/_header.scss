@@ -13,7 +13,12 @@
 
 .site-nav {
    display: flex;
-   margin-left: 93px;
+   margin-left: 88px;
+
+   @include desktop {
+      margin-left: 93px;
+   }
+   
 }
 
 .site-nav__item:not(:last-child) {

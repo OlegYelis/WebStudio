@@ -162,20 +162,23 @@
             <h2 class="demonstration__title">Чем мы занимаемся</h2>
             <ul class="demonstration__list list">
                <li class="demonstration__item">
-                  <div class="demonstration__thumb"><img src="./images/programming.jpg" alt="человек програмирует"
-                        width="370" height="294">
+                  <div class="demonstration__thumb">
+                     <img srcset="./images/programming.jpg 1x, ./images/programming-2x.jpg 2x"
+                        src="./images/programming.jpg" alt="человек програмирует">
                      <p class="demonstration__text">Десктопные приложения</p>
                   </div>
                </li>
                <li class="demonstration__item">
-                  <div class="demonstration__thumb"><img src="./images/phoneinhand.jpg" alt="в руке телефон" width="370"
-                        height="294">
+                  <div class="demonstration__thumb">
+                     <img srcset="./images/phoneinhand.jpg 1x, ./images/phoneinhand-2x.jpg 2x"
+                        src="./images/phoneinhand.jpg" alt="в руке телефон" width="370" height="294">
                      <p class="demonstration__text">Мобильные приложения</p>
                   </div>
                </li>
                <li class="demonstration__item">
-                  <div class="demonstration__thumb"><img src="./images/rainbow.jpg" alt="палитра цветов на планшете"
-                        width="370" height="294">
+                  <div class="demonstration__thumb">
+                     <img srcset="./images/rainbow.jpg 1x, ./images/rainbow-2x.jpg 2x" src="./images/rainbow.jpg"
+                        alt="палитра цветов на планшете" width="370" height="294">
                      <p class="demonstration__text">Дизайнерские решения</p>
                   </div>
                </li>
@@ -188,7 +191,19 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="list team-card">
                <li class="team-card__item">
-                  <img src="./images/proddesigner.jpg" alt="продукт дизайнер">
+                  <picture>
+                     <source srcset="
+                        ./images/proddesigner.jpg    1x,
+                        ./images/proddesigner-2x.jpg 2x" media="(min-width:1200px)" />
+                     <source srcset="
+                        ./images/proddesigner-tab.jpg    1x,
+                        ./images/proddesigner-tab-2x.jpg 2x" media="(min-width:768px)" />
+                     <source srcset="
+                        ./images/proddesigner-mob.jpg    1x,
+                        ./images/proddesigner-mob-2x.jpg 2x" media="(min-width:320px)" />
+                     <img src="./images/proddesigner.jpg" alt="продукт дизайнер">
+                  </picture>
+
                   <div class="team-card__info">
                      <h3 class="team-card__member">Игорь Демьяненко</h3>
                      <p class="team-card__pos">Product Designer</p>
@@ -226,7 +241,18 @@
                   </div>
                </li>
                <li class="team-card__item">
-                  <img src="./images/frontdev.jpg" alt="фронт-энд разработчик">
+                  <picture>
+                     <source srcset="
+                        ./images/frontdev.jpg    1x,
+                        ./images/frontdev-2x.jpg 2x" media="(min-width:1200px)" />
+                     <source srcset="
+                        ./images/frontdev-tab.jpg    1x,
+                        ./images/frontdev-tab-2x.jpg 2x" media="(min-width:768px)" />
+                     <source srcset="
+                        ./images/frontdev-mob.jpg    1x,
+                        ./images/frontdev-mob-2x.jpg 2x" media="(min-width:320px)" />
+                     <img src="./images/frontdev.jpg" alt="фронт-энд разработчик">
+                  </picture>
                   <div class="team-card__info">
                      <h3 class="team-card__member">Ольга Репина</h3>
                      <p class="team-card__pos">Frontend Developer</p>
@@ -265,7 +291,18 @@
                   </div>
                </li>
                <li class="team-card__item">
-                  <img src="./images/marketing.jpg" alt="маркетолог">
+                  <picture>
+                     <source srcset="
+                        ./images/marketing.jpg    1x,
+                        ./images/marketing-2x.jpg 2x" media="(min-width:1200px)" />
+                     <source srcset="
+                        ./images/marketing-tab.jpg    1x,
+                        ./images/marketing-tab-2x.jpg 2x" media="(min-width:768px)" />
+                     <source srcset="
+                        ./images/marketing-mob.jpg    1x,
+                        ./images/marketing-mob-2x.jpg 2x" media="(min-width:320px)" />
+                     <img src="./images/marketing.jpg" alt="маркетолог">
+                  </picture>
                   <div class="team-card__info">
                      <h3 class="team-card__member">Николай Тарасов</h3>
                      <p class="team-card__pos">Marketing</p>
@@ -304,7 +341,19 @@
                   </div>
                </li>
                <li class="team-card__item">
-                  <img src="./images/uidesigner.jpg" alt="ui дизайнер">
+                  <picture>
+                     <source srcset="
+                        ./images/uidesigner.jpg    1x,
+                        ./images/uidesigner-2x.jpg 2x" media="(min-width:1200px)" />
+                     <source srcset="
+                        ./images/uidesigner-tab.jpg    1x,
+                        ./images/uidesigner-tab-2x.jpg 2x" media="(min-width:768px)" />
+                     <source srcset="
+                        ./images/uidesigner-mob.jpg    1x,
+                        ./images/uidesigner-mob-2x.jpg 2x" media="(min-width:320px)" />
+                     <img src="./images/uidesigner.jpg" alt="ui дизайнер">
+                  </picture>
+
                   <div class="team-card__info">
                      <h3 class="team-card__member">Михаил Ермаков</h3>
                      <p class="team-card__pos">UI Designer</p>
