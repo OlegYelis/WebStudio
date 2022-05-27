@@ -33,8 +33,8 @@
 .specifics__item:not(:last-child){
    margin-bottom: 30px;
 
-   @include desktop {
-      margin-bottom: 0;
+   @include tablet {
+      margin-bottom: 15px;
    }
 
 }
@@ -58,13 +58,14 @@
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
+   text-align: center;
 
    color: var(--title-text-color);
 
    margin-bottom: 10px;
 
-   @include mobile {
-      text-align: center;
+   @include tablet {
+      text-align: start;
    }
 }
 

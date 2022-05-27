@@ -1,5 +1,9 @@
 .examples {
    padding: 60px 0;
+
+   @include desktop {
+      padding: 94px 0;
+   } 
 }
 
 .examples__btn {
@@ -62,6 +66,10 @@
 
    &:not(:last-child) {
       margin-bottom: 30px;
+
+      @include tablet {
+      margin-bottom: 15px;
+   }
    }
 
    &:hover {
